@@ -8,6 +8,23 @@
 
 }
 
+.todo {
+    position: absolute;
+    width: 96px;
+    height: 41px;
+    left: 56px;
+    top: 56px;
+    /* margin-left:56px;
+    margin-top:56px; */
+    /* H1 */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #000000;
+}
+
 .new-continue-button {
     font-family: 'Arial';
     font-style: normal;
@@ -36,102 +53,109 @@
     border-radius: 4px;
 }
 
-.todo {
-    position: absolute;
-    width: 96px;
-    height: 41px;
-    left: 56px;
-    top: 56px;
-    /* margin-left:56px;
-    margin-top:56px; */
-    /* H1 */
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 41px;
-    color: #000000;
-}
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height: 50%;
-    top:200px;
-  }
-.title-h2 {
-    margin-right: 30px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
     position: absolute;
-    width: 3em;
-    height: 2em;
-    left: 3em;
-    top: 3em; 
+    width: 753px;
+    height: 276px;
+    left: 344px;
+    top: 174px;
+    background-color: #fefefe;
+
+
+
+}
+
+.title-h2 {
+    background-color: #fefefe;
+    position: absolute;
+    width: 49px;
+    height: 28px;
+    left: 48px;
+    top: 48px;
+
     /* H2 */
-    background-color:#fefefe;
+
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     /* identical to box height */
+
+
     /* Black */
+
     color: #272727;
-    /* background-color: #F8F8F8; */
 }
 
 .date-h2 {
-    margin-top: 20px;
-    background-color:#fefefe;
+    background-color: #fefefe;
     position: absolute;
-    /* width: 53px;
+    width: 53px;
     height: 28px;
     left: 48px;
-    top: 124px; */
+    top: 124px;
+
+    /* H2 */
 
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    /* identical to box height */
+
+
+    /* Black */
 
     color: #272727;
-    background-color: none;
 }
 
 
 .text {
-    outline: none;
     box-sizing: border-box;
+
     /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
+
     position: absolute;
-    /* width: 600px;
+    width: 600px;
     height: 44px;
     left: 113px;
-    top: 40px; */
+    top: 40px;
+
     /* Back */
+
     background: #D0CAD9;
     /* Black */
+
     border: 1px solid #272727;
 }
 
@@ -140,6 +164,29 @@
 }
 
 .date-text {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 149px;
+    height: 44px;
+    left: 113px;
+    top: 116px;
+
+    /* Back */
+
+    background: #D0CAD9;
+    /* Black */
+
+    border: 1px solid #272727;
     color: black;
     /* date/empty */
     outline: none;
