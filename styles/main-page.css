@@ -23,19 +23,15 @@
     align-items: center;
     padding: 8px 42px;
     gap: 10px;
-
     position: absolute;
     width: 256px;
     height: 44px;
     /* left: 1128px; */
     right: 56px;
     top: 137px;
-
     /* Purple */
-
     background: #800080;
     /* Button Effect */
-
     box-shadow: 4px 4px 16px rgba(39, 39, 39, 0.25), inset -4px -4px 16px rgba(39, 39, 39, 0.1), inset 4px 4px 16px rgba(39, 39, 39, 0.07);
     border-radius: 4px;
 }
@@ -49,36 +45,28 @@
     /* margin-left:56px;
     margin-top:56px; */
     /* H1 */
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 41px;
-
     color: #000000;
 }
 
 .title-h2 {
-
     position: absolute;
     width: 49px;
     height: 28px;
     left: 48px;
     top: 48px;
-
     /* H2 */
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     /* identical to box height */
-
-
     /* Black */
-
     color: #272727;
     background-color: #F8F8F8;
 }
@@ -89,65 +77,62 @@
     height: 28px;
     left: 48px;
     top: 124px;
-
     /* H2 */
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     /* identical to box height */
-
-
     /* Black */
-
     color: #272727;
     background-color: #F8F8F8;
 
 }
 
-div {
-    opacity: 1;
-    position: absolute;
+.modal_content {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.1);
     width: 753px;
     height: 276px;
     left: 344px;
     top: 374px;
-
     /* White */
-
-    background: #F8F8F8;
+    /* background: #F8F8F8; */
 }
 
 .text {
     outline: none;
     box-sizing: border-box;
-
     /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
-
     position: absolute;
     width: 600px;
     height: 44px;
     left: 113px;
     top: 40px;
-
     /* Back */
-
     background: #D0CAD9;
     /* Black */
-
     border: 1px solid #272727;
 }
-.date-text::placeholder{
-    color:black;
+
+.date-text::placeholder {
+    color: black;
 }
+
 .date-text {
     color: black;
     /* date/empty */
@@ -158,56 +143,36 @@ div {
     font-size: 24px;
     line-height: 28px;
     /* identical to box height */
-
-
     /* Black */
-
     color: #272727;
-
-
     /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
-
     box-sizing: border-box;
-
     /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
-
     position: absolute;
     width: 149px;
     height: 44px;
     left: 113px;
     top: 116px;
-
     /* Back */
-
     background: #D0CAD9;
     /* Black */
-
     border: 1px solid #272727;
-
-
 }
 
 .modal {
     position: absolute;
-
-
     left: 344px;
     top: 220px;
-
     /* White */
-
     background: #F8F8F8;
-
 }
 
 .cancel-btn {
@@ -226,7 +191,6 @@ div {
     align-items: center;
     padding: 6px 58px;
     gap: 10px;
-
     width: 308.5px;
     height: 44px;
     position: absolute;
@@ -235,15 +199,6 @@ div {
     background: rgba(126, 122, 122, 0.5);
     box-shadow: 4px 4px 16px rgba(39, 39, 39, 0.1);
     border-radius: 4px;
-}
-
-.modal-open .container-fluid,
-.modal-open .container {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
 }
 
 .save-btn {
@@ -261,7 +216,6 @@ div {
     align-items: center;
     padding: 6px 58px;
     gap: 10px;
-
     width: 308.5px;
     height: 44px;
     position: absolute;
