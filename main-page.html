@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main-page.css" />
+    <link rel="stylesheet" href="./styles/todo-list.css">
   </head>
 
   <body>
@@ -20,7 +21,7 @@
         <h2 class="date-h2">
           Date
         </h2>
-        <input type="text" class="date-text" placeholder="dd/mm/yyyy" onkeypress="validate_date_value()">
+        <input type="text" class="date-text" maxlength="10" placeholder="dd/mm/yyyy" onkeypress="validate_date_value()">
         <button class="cancel-btn">
           Cancel
         </button>
