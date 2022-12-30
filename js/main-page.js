@@ -5,7 +5,7 @@ let cancel_btn = document.querySelector(".cancel-btn")
 let date_text_input = document.querySelector(".date-text")
 let input_text = document.querySelector(".text")
 let save_btn = document.querySelector(".save-btn")
-let todo_title = document.querySelector(".todo")
+let todos = document.querySelector(".todos")
 
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -33,18 +33,22 @@ function validate_date_value() {
 }
 function add_task_ui(){
     modal.style.display = "none"
-    let h2_date = document.createElement("h2")
-    h2_date.innerHTML = date_text_input.value;
-    let h2_text = document.createElement("h2")
-    h2_text = pass;
-    let takvim = document.createElement("img")
-    takvim.className ="calendar"
-    takvim.src ="../assets/Vector.png"
-    let h2_head = takvim;
-    let li_todo = document.createElement("li")
-    li_todo.innerHTML = input_text.value
-    h2_head.append(li_todo)
-    todo_title.append(h2_head)
+    let span = document.createElement("span")
+    span.className="todo_list_head"
+    span.innerHTML= `
+    <img class="image" src='../assets/calendar.png' />
+    <h2 class="header1" style='display:inline;'>${date_text_input.value}</h2>
+    `
+    todos.append(span)
+    let todo_task = document.createElement("span")
+    todo_task.className ="todo_task"
+    todo_task.innerHTML= ` 
+    <img src='../assets/pencil.png' width="20px" height="20px"/>
+    <p class="todo-text">${input_text.value}</p>
+    <img src='../assets/pencil.png' width="20px" height="20px"/>
+    <img src='../assets/delete.png' width="20px" height="20px"/>
+    `
+    body.append(todo_task)
 }
 
 save_btn.addEventListener("click", add_task_ui)

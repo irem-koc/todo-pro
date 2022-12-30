@@ -230,11 +230,34 @@
     box-shadow: 4px 4px 16px rgba(39, 39, 39, 0.1);
     border-radius: 4px;
 }
-.calendar{
-    height: 24px;
-    width: 24px;
-    left: 4px;
-    top: 4px;
-    border-radius: 0px;
 
+.todo_list_head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 252px;
+    height: 32px;
+    left: 56px;
+    top: 137px;
+    
 }
+
+.header1 {
+    margin: 2px 0;
+    width: 212px;
+    height: 28px;
+    margin-left: 12px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.image {
+    margin: 4px 0 4px 4px;
+}
+
