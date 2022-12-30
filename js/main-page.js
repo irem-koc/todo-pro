@@ -35,15 +35,14 @@ function add_task_ui(){
     modal.style.display = "none"
     let h2_date = document.createElement("h2")
     h2_date.innerHTML = date_text_input.value;
+    let h2_text = document.createElement("h2")
+    h2_text = pass;
     let takvim = document.createElement("img")
     takvim.className ="calendar"
     takvim.src ="../assets/Vector.png"
-    takvim
-    let h2_head = takvim
-
-    let todo = input_text.value;
+    let h2_head = takvim;
     let li_todo = document.createElement("li")
-    li_todo.innerHTML = todo
+    li_todo.innerHTML = input_text.value
     h2_head.append(li_todo)
     todo_title.append(h2_head)
 }

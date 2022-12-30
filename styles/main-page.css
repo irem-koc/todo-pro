@@ -230,3 +230,11 @@
     box-shadow: 4px 4px 16px rgba(39, 39, 39, 0.1);
     border-radius: 4px;
 }
+.calendar{
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    top: 4px;
+    border-radius: 0px;
+
+}
