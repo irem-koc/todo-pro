@@ -40,13 +40,14 @@ function add_task_ui(){
     <h2 class="header1" style='display:inline;'>${date_text_input.value}</h2>
     `
     todos.append(span)
-    let todo_task = document.createElement("span")
+    let todo_task = document.createElement("li")
     todo_task.className ="todo_task"
+    todo_task.style.listStyle ="none"
     todo_task.innerHTML= ` 
-    <img src='../assets/pencil.png' width="20px" height="20px"/>
-    <p class="todo-text">${input_text.value}</p>
-    <img src='../assets/pencil.png' width="20px" height="20px"/>
-    <img src='../assets/delete.png' width="20px" height="20px"/>
+    <p style="background:none" click="putImage()" class="first_image"> </p>
+    <p style="background:none" class="todo-text">${input_text.value}</p>
+    <img style="background:none" class="second_image" src='../assets/pencil.png' />
+    <img style="background:none" class="third_image" src='../assets/delete.png' />
     `
     body.append(todo_task)
 }
@@ -56,3 +57,9 @@ add_task.addEventListener("click", add_task_modal)
 cancel_btn.addEventListener("click", function () {
     modal.style.display = "none";
 })
+let check_image = document.querySelector(".first_image")
+function putImage(){
+    let image = document.createElement("img")
+    image.src='../assets/done.png';
+    check_image = image
+}
